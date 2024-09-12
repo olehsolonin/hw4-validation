@@ -13,7 +13,7 @@ import logger from './middlewares/logger.js';
 export const startServer = () => {
 	const app = express(); // app - web server - створення сервера
 
-	app.use(logger); // використовуємо раніше створену мідлвару 
+	// app.use(logger); // використовуємо раніше створену мідлвару 
 	app.use(cors()); // корототкий запис створення і використання мідлвару CORS
 	app.use(express.json());
 
