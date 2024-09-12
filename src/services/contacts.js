@@ -9,6 +9,7 @@ export const createContact = payload => ContactModel.create(payload);
 export const updateContact = async (filter, data, options = {}) => {
 	const rawResult = await ContactModel.findOneAndUpdate(filter, data, {
 		new: true,
+		runValidators: true,
 		includeResultMetadata: true,
 		...options,
 	});
