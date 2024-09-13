@@ -22,7 +22,7 @@ export const parseContactsFilterParams = (query = {}) => {
 	const filter = {};
 
 	if (parsedType) filter.contactType = parsedType;
-	if (parsedIsFavourite !== 'boolean') {
+	if (parsedIsFavourite !== undefined) {
 		filter.isFavourite = parsedIsFavourite;
 	}
 

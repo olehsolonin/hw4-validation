@@ -28,6 +28,9 @@ export const getAllContactsController = async (req, res, next) => {
 		next(error);
 	}
 
+	console.log({ perPage, page, sortBy, sortOrder, filter });
+
+
 };
 
 export const getContactByIdController = async (req, res, next) => {
